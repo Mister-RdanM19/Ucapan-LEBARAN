@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eid Message #1 for N3i</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #d4af37; --bg: #050505; --text: #eaeaea; }
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background-color: var(--bg); font-family: 'Poppins', sans-serif; }
+        
+        /* Particle Background */
+        #particles-js { position: absolute; width: 100%; height: 100%; z-index: 1; }
+
+        /* Elegant Glassmorphism Card */
+        .main-container { position: relative; z-index: 10; display: flex; align-items: center; justify-content: center; height: 100%; }
+        .card { 
+            background: rgba(255, 255, 255, 0.05); 
+            backdrop-filter: blur(10px); 
+            -webkit-backdrop-filter: blur(10px); 
+            border-radius: 20px; 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            padding: 50px; 
+            max-width: 600px; 
+            text-align: center; 
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); 
+            opacity: 0; transform: translateY(20px); animation: fadeInUp 1s forwards; animation-delay: 0.5s;
+        }
+
+        .eid-title { font-family: 'Poppins', sans-serif; font-weight: 600; color: var(--gold); font-size: 2.8em; margin: 0; text-transform: uppercase; letter-spacing: 3px; }
+        .romantic-text { font-family: 'Great Vibes', cursive; color: var(--text); font-size: 2.2em; line-height: 1.4; margin: 30px 0; text-shadow: 0 0 5px rgba(255,255,255,0.3); }
+        .signature { font-weight: 300; color: #888; letter-spacing: 2px; text-transform: uppercase; }
+
+        @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <div class="main-container">
+        <div class="card">
+            <h1 class="eid-title">Eid Message #01</h1>
+            <p class="romantic-text">
+                "N3i, di hari yang fitri ini, aku berdoa agar Allah selalu mengikat hati kita dengan tali rahmat-Nya, seerat janji-Nya pada hamba-Nya yang beriman."
+            </p>
+            <div class="signature">-- Mr.Rm19 to N3i --</div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            "particles": { "number": { "value": 100 }, "color": { "value": "#d4af37" }, "shape": { "type": "circle" }, "opacity": { "value": 0.5, "random": true }, "size": { "value": 3, "random": true }, "line_linked": { "enable": false }, "move": { "enable": true, "speed": 1.5, "direction": "bottom", "random": true, "straight": false, "out_mode": "out" } },
+            "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": false }, "onclick": { "enable": false }, "resize": true } },
+            "retina_detect": true
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eid Message #3 - Mr.Rm19</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { margin: 0; background: #020205; height: 100vh; overflow: hidden; font-family: 'Quicksand', sans-serif; display: flex; align-items: center; justify-content: center; }
+        .stars { position: absolute; width: 100%; height: 100%; background: transparent; z-index: 0; }
+        .star { position: absolute; background: white; border-radius: 50%; opacity: 0.5; animation: twinkle var(--duration) infinite; }
+        @keyframes twinkle { 0%, 100% { opacity: 0.3; transform: scale(1); } 50% { opacity: 1; transform: scale(1.2); } }
+        
+        .card-3 { position: relative; z-index: 10; text-align: center; color: white; padding: 20px; }
+        .eid-label { font-size: 0.9em; letter-spacing: 5px; color: #d4af37; text-transform: uppercase; margin-bottom: 20px; display: block; }
+        .msg-3 { font-family: 'Dancing Script', cursive; font-size: 2.5em; line-height: 1.5; text-shadow: 0 0 15px rgba(212, 175, 55, 0.5); }
+        .footer-3 { margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; font-size: 0.8em; opacity: 0.6; }
+    </style>
+</head>
+<body>
+    <div class="stars" id="starField"></div>
+    <div class="card-3">
+        <span class="eid-label">Sequence #03</span>
+        <p class="msg-3">"Taqabbalallahu Minna Wa Minkum, N3i. Semoga Allah menerima amal kita, dan menerima doaku agar kita bisa merayakan ratusan Lebaran lagi bersama dalam ridho-Nya."</p>
+        <div class="footer-3">DECRYPTED BY MR.RM19 // EID 1447H</div>
+    </div>
+    <script>
+        const field = document.getElementById('starField');
+        for(let i=0; i<150; i++){
+            let star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = Math.random()*100 + '%';
+            star.style.top = Math.random()*100 + '%';
+            star.style.width = Math.random()*3 + 'px';
+            star.style.height = star.style.width;
+            star.style.setProperty('--duration', (Math.random()*3 + 2) + 's');
+            field.appendChild(star);
+        }
+    </script>
+</body>
+</html>
